@@ -26,6 +26,12 @@ class CamViewController: UIViewController{
         configureCameraController()
     }
     
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        styleButton()
+//        configureCameraController()
+//        
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

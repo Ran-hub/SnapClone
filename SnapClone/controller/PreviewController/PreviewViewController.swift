@@ -19,7 +19,7 @@ class PreviewViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+       formatting()
         imageView.image = previewImage
     }
    
@@ -35,5 +35,10 @@ class PreviewViewController: UIViewController {
     
     @IBAction func closeAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func formatting(){
+        closeButton.layer.cornerRadius = 5
+        saveButton.layer.cornerRadius = 5
     }
 }

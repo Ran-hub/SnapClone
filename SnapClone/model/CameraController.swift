@@ -26,7 +26,6 @@ class CameraController: NSObject{
     var previewLayer: AVCaptureVideoPreviewLayer?
     
     var flashMode = AVCaptureDevice.FlashMode.off
-   
     var photoCaptureCompletionBlock: ((UIImage?, Error?) -> Void)?
 }
 

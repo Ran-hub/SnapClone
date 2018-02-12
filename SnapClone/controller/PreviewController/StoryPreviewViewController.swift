@@ -16,9 +16,11 @@ class StoryPreviewViewController: UIViewController {
     var timer: Timer!
     @IBOutlet weak var storyPreview: UIImageView!
     
+    @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var timerLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        formatting()
         counter = imgset.count * 3
         storyPreview.image = imgset.first
         imgset = Array(imgset.dropFirst())
@@ -32,7 +34,7 @@ class StoryPreviewViewController: UIViewController {
     }
     
     @objc func previewTimer(){
-        if time == 0{
+        if time == 1{
         if imgset == []{
             timer.invalidate()
             self.navigationController?.popViewController(animated: true)
@@ -46,5 +48,10 @@ class StoryPreviewViewController: UIViewController {
         else {time = time - 1
             timerLbl.text = "\(time)"
         }
+    }
+    
+    func formatting(){
+        timerLbl.layer.cornerRadius = timerLbl.frame.width/2
+        closeButton.layer.cornerRadius = 5
     }
 }
