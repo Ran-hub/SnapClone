@@ -26,13 +26,13 @@
 		FAAD2126202E923E00F0E110 /* StoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD2124202E923E00F0E110 /* StoryViewController.xib */; };
 		FAAD2128202F949600F0E110 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD2127202F949600F0E110 /* CameraController.swift */; };
 		FAAD212A20301D4D00F0E110 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD212920301D4D00F0E110 /* PreviewViewController.swift */; };
-		FAAD212D2030D61C00F0E110 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD212B2030D61C00F0E110 /* FriendsTableViewController.swift */; };
-		FAAD212E2030D61C00F0E110 /* FriendsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD212C2030D61C00F0E110 /* FriendsTableViewController.xib */; };
 		FAAD21312030E5D900F0E110 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD212F2030E5D900F0E110 /* FriendTableViewCell.swift */; };
 		FAAD21322030E5D900F0E110 /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD21302030E5D900F0E110 /* FriendTableViewCell.xib */; };
 		FAAD21372030FAFB00F0E110 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD21362030FAFB00F0E110 /* StoryTableViewCell.swift */; };
 		FAAD21392030FD8300F0E110 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD21382030FD8300F0E110 /* StoryTableViewCell.xib */; };
 		FAAD213B2031644C00F0E110 /* StoryPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD213A2031644C00F0E110 /* StoryPreviewViewController.swift */; };
+		FAAD213F20317D2E00F0E110 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD213D20317D2E00F0E110 /* FriendsViewController.swift */; };
+		FAAD214020317D2E00F0E110 /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAD213E20317D2E00F0E110 /* FriendsViewController.xib */; };
 		FD23BBA397505E9D6029805F /* Pods_SnapClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4907291FEB66CD856C5F7CE8 /* Pods_SnapClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,13 +87,13 @@
 		FAAD2124202E923E00F0E110 /* StoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryViewController.xib; sourceTree = "<group>"; };
 		FAAD2127202F949600F0E110 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		FAAD212920301D4D00F0E110 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		FAAD212B2030D61C00F0E110 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
-		FAAD212C2030D61C00F0E110 /* FriendsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsTableViewController.xib; sourceTree = "<group>"; };
 		FAAD212F2030E5D900F0E110 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		FAAD21302030E5D900F0E110 /* FriendTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		FAAD21362030FAFB00F0E110 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		FAAD21382030FD8300F0E110 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		FAAD213A2031644C00F0E110 /* StoryPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPreviewViewController.swift; sourceTree = "<group>"; };
+		FAAD213D20317D2E00F0E110 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		FAAD213E20317D2E00F0E110 /* FriendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,10 +217,10 @@
 		FAAD21332030EC6B00F0E110 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD213E20317D2E00F0E110 /* FriendsViewController.xib */,
+				FAAD21302030E5D900F0E110 /* FriendTableViewCell.xib */,
 				FAAD21382030FD8300F0E110 /* StoryTableViewCell.xib */,
 				FAAD2124202E923E00F0E110 /* StoryViewController.xib */,
-				FAAD212C2030D61C00F0E110 /* FriendsTableViewController.xib */,
-				FAAD21302030E5D900F0E110 /* FriendTableViewCell.xib */,
 				FAAD211B202E8F6100F0E110 /* CamViewController.xib */,
 			);
 			path = View;
@@ -229,6 +229,7 @@
 		FAAD21342030EC9300F0E110 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				FAAD2127202F949600F0E110 /* CameraController.swift */,
 				FAAD212F2030E5D900F0E110 /* FriendTableViewCell.swift */,
 				FAAD21362030FAFB00F0E110 /* StoryTableViewCell.swift */,
 			);
@@ -240,11 +241,7 @@
 			children = (
 				FAAD2122202E920700F0E110 /* LoginController */,
 				FAAD213C203170B400F0E110 /* PreviewController */,
-				FAAD210E202E763400F0E110 /* HomeViewController.swift */,
-				FAAD2123202E923E00F0E110 /* StoryViewController.swift */,
-				FAAD212B2030D61C00F0E110 /* FriendsTableViewController.swift */,
-				FAAD2127202F949600F0E110 /* CameraController.swift */,
-				FAAD211A202E8F6100F0E110 /* CamViewController.swift */,
+				FAAD21422031842200F0E110 /* HomeController */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -256,6 +253,17 @@
 				FAAD213A2031644C00F0E110 /* StoryPreviewViewController.swift */,
 			);
 			path = PreviewController;
+			sourceTree = "<group>";
+		};
+		FAAD21422031842200F0E110 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD210E202E763400F0E110 /* HomeViewController.swift */,
+				FAAD2123202E923E00F0E110 /* StoryViewController.swift */,
+				FAAD213D20317D2E00F0E110 /* FriendsViewController.swift */,
+				FAAD211A202E8F6100F0E110 /* CamViewController.swift */,
+			);
+			path = HomeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,11 +388,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAD2126202E923E00F0E110 /* StoryViewController.xib in Resources */,
-				FAAD212E2030D61C00F0E110 /* FriendsTableViewController.xib in Resources */,
 				FA739DE1202E32C0009FBB7D /* LaunchScreen.storyboard in Resources */,
 				FAAD21322030E5D900F0E110 /* FriendTableViewCell.xib in Resources */,
 				FA739E09202E4704009FBB7D /* GoogleService-Info.plist in Resources */,
 				FA739DDE202E32C0009FBB7D /* Assets.xcassets in Resources */,
+				FAAD214020317D2E00F0E110 /* FriendsViewController.xib in Resources */,
 				FAAD211D202E8F6100F0E110 /* CamViewController.xib in Resources */,
 				FAAD21392030FD8300F0E110 /* StoryTableViewCell.xib in Resources */,
 				FA739DDC202E32C0009FBB7D /* Main.storyboard in Resources */,
@@ -569,7 +577,7 @@
 				FAAD2128202F949600F0E110 /* CameraController.swift in Sources */,
 				FAAD211C202E8F6100F0E110 /* CamViewController.swift in Sources */,
 				FAAD210F202E763400F0E110 /* HomeViewController.swift in Sources */,
-				FAAD212D2030D61C00F0E110 /* FriendsTableViewController.swift in Sources */,
+				FAAD213F20317D2E00F0E110 /* FriendsViewController.swift in Sources */,
 				FAAD21312030E5D900F0E110 /* FriendTableViewCell.swift in Sources */,
 				FAAD212A20301D4D00F0E110 /* PreviewViewController.swift in Sources */,
 				FAAD213B2031644C00F0E110 /* StoryPreviewViewController.swift in Sources */,

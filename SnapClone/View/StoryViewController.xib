@@ -35,14 +35,26 @@
                         <outlet property="delegate" destination="-1" id="AfJ-6k-oEm"/>
                     </connections>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfn-H2-F6T">
+                    <rect key="frame" x="300" y="20" width="69" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="LogOut"/>
+                    <connections>
+                        <action selector="LogOut:" destination="-1" eventType="touchUpInside" id="KaX-L6-bhb"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="p5X-Nl-Doc" firstAttribute="top" secondItem="Tfn-H2-F6T" secondAttribute="bottom" constant="8" id="7HV-zn-xqa"/>
+                <constraint firstItem="Tfn-H2-F6T" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ccx-Ub-KTX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p5X-Nl-Doc" secondAttribute="trailing" constant="16" id="JUS-pb-1RC"/>
                 <constraint firstItem="lzf-VT-nz0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="OE3-HT-Cs8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="p5X-Nl-Doc" secondAttribute="bottom" constant="10" id="efG-kq-UCI"/>
                 <constraint firstItem="p5X-Nl-Doc" firstAttribute="top" secondItem="lzf-VT-nz0" secondAttribute="bottom" constant="10" id="gLv-Vx-Avc"/>
+                <constraint firstItem="Tfn-H2-F6T" firstAttribute="leading" secondItem="lzf-VT-nz0" secondAttribute="trailing" constant="135" id="l8s-cj-vWT"/>
                 <constraint firstItem="p5X-Nl-Doc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="rN1-2W-VKU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tfn-H2-F6T" secondAttribute="trailing" constant="6" id="x2E-kT-vwK"/>
                 <constraint firstItem="lzf-VT-nz0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="y5C-RK-x8G"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

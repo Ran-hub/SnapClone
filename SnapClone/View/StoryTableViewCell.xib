@@ -21,17 +21,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yqR-Wn-bjf">
-                        <rect key="frame" x="26" y="21" width="323" height="163"/>
+                        <rect key="frame" x="36" y="31" width="303" height="143"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="yqR-Wn-bjf" secondAttribute="height" multiplier="323:163" id="mu7-RM-9ky"/>
+                            <constraint firstAttribute="width" secondItem="yqR-Wn-bjf" secondAttribute="height" multiplier="303:143" id="05H-hd-kIE"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="yqR-Wn-bjf" firstAttribute="top" secondItem="fFr-tn-beL" secondAttribute="topMargin" constant="10" id="0DL-Hg-VG3"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="yqR-Wn-bjf" secondAttribute="trailing" constant="10" id="4Cs-zw-cxm"/>
-                    <constraint firstItem="yqR-Wn-bjf" firstAttribute="leading" secondItem="fFr-tn-beL" secondAttribute="leadingMargin" constant="10" id="Clx-XZ-vHP"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="yqR-Wn-bjf" secondAttribute="bottom" constant="10" id="jYD-6r-Hl4"/>
+                    <constraint firstItem="yqR-Wn-bjf" firstAttribute="top" secondItem="fFr-tn-beL" secondAttribute="topMargin" constant="20" id="0DL-Hg-VG3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yqR-Wn-bjf" secondAttribute="trailing" constant="20" id="4Cs-zw-cxm"/>
+                    <constraint firstItem="yqR-Wn-bjf" firstAttribute="leading" secondItem="fFr-tn-beL" secondAttribute="leadingMargin" constant="20" id="Clx-XZ-vHP"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yqR-Wn-bjf" secondAttribute="bottom" constant="20" id="jYD-6r-Hl4"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

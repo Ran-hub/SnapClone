@@ -19,6 +19,16 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        // If we have the uid stored, the user is already logger in - no need to sign in again!
+//        
+//        if UserDefaults.standardUserDefaults().valueForKey("uid") != nil && DataService.dataService.CURRENT_USER_REF.authData != nil {
+//            self.performSegue(withIdentifier: "CurrentlyLoggedIn", sender: nil)
+//        }
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

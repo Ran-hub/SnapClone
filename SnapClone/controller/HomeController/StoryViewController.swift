@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class StoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -41,14 +42,28 @@ class StoryViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidAppear(animated)
         tableView.reloadData()
     }
+    
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let vc = storyboard.instantiateViewController(withIdentifier: "StoryPreview") as? StoryPreviewViewController{
-            vc.img = myStories[(tableView.indexPathForSelectedRow?.row)!]
+            vc.imgset = Array(myStories[(tableView.indexPathForSelectedRow?.row)!...myStories.count-1])
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 
+    @IBAction func LogOut(_ sender: Any) {
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initial = storyboard.instantiateViewController(withIdentifier: "Initial")
+        UIApplication.shared.keyWindow?.rootViewController = initial
+        
+    }
 }
 
 protocol AddDatatoStoryView {

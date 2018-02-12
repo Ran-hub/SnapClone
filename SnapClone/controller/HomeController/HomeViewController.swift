@@ -14,7 +14,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         let camView: CamViewController = CamViewController(nibName: "CamViewController", bundle: nil)
-        let friendsView: FriendsTableViewController = FriendsTableViewController(nibName: "FriendsTableViewController", bundle: nil)
+        let friendsView: FriendsViewController = FriendsViewController(nibName: "FriendsViewController", bundle: nil)
         let storyView: StoryViewController = StoryViewController(nibName: "StoryViewController", bundle: nil)
         
         self.addChildViewController(friendsView)
@@ -41,6 +41,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
         
     }
    
+
     
 
 }
