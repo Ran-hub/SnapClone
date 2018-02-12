@@ -85,12 +85,13 @@ class CamViewController: UIViewController{
                 return
             }
             self.prevImage = image
+        
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let vc = storyboard.instantiateViewController(withIdentifier: "Preview") as? PreviewViewController{
                 vc.previewImage = self.prevImage
+                vc.storyDelegate = self.parent?.childViewControllers[2] as? StoryViewController
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
-    }
-    
+    }  
 }

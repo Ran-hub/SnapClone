@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iKg-72-DYO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aVQ-U2-nPn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -115,6 +115,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginAction:" destination="IPm-Tk-Wuc" eventType="touchUpInside" id="GbL-aa-Rii"/>
+                                    <segue destination="iKg-72-DYO" kind="presentation" id="wKI-w9-dXO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username or Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgQ-0k-7YN">
@@ -179,6 +180,7 @@
                     <connections>
                         <outlet property="hScroll" destination="zk1-3n-ewH" id="v0S-Oo-X67"/>
                         <segue destination="QSl-T6-4Xu" kind="presentation" identifier="previewSegue" modalTransitionStyle="coverVertical" id="7QK-Gn-Whm"/>
+                        <segue destination="gSs-HM-5PE" kind="presentation" identifier="StoryPreviewSegue" id="MxB-uX-vAY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="027-UM-kkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,9 +199,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj9-0X-Gkr">
-                                <rect key="frame" x="325" y="20" width="34" height="30"/>
+                                <rect key="frame" x="273" y="20" width="86" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Save">
+                                <state key="normal" title="Add to Story">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -223,9 +225,9 @@
                             <constraint firstItem="SdS-3G-yEc" firstAttribute="leading" secondItem="MG7-WF-P1c" secondAttribute="leading" id="93g-7Y-Ph3"/>
                             <constraint firstAttribute="trailing" secondItem="SdS-3G-yEc" secondAttribute="trailing" id="BRa-Bh-t6G"/>
                             <constraint firstAttribute="bottom" secondItem="SdS-3G-yEc" secondAttribute="bottom" id="E1Y-14-wla"/>
+                            <constraint firstItem="lj9-0X-Gkr" firstAttribute="leading" secondItem="cXV-Ol-ZxN" secondAttribute="trailing" constant="218" id="QSi-5l-PfU"/>
                             <constraint firstItem="ovG-OF-FNn" firstAttribute="trailing" secondItem="lj9-0X-Gkr" secondAttribute="trailing" constant="16" id="QeO-kx-DKV"/>
                             <constraint firstItem="lj9-0X-Gkr" firstAttribute="top" secondItem="ovG-OF-FNn" secondAttribute="top" id="Rk1-eN-5oo"/>
-                            <constraint firstItem="lj9-0X-Gkr" firstAttribute="leading" secondItem="cXV-Ol-ZxN" secondAttribute="trailing" constant="270" id="ld1-pC-jUi"/>
                             <constraint firstItem="SdS-3G-yEc" firstAttribute="top" secondItem="MG7-WF-P1c" secondAttribute="top" id="s7e-iY-Dq4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ovG-OF-FNn"/>
@@ -239,6 +241,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfB-zE-MdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4084" y="217.24137931034485"/>
+        </scene>
+        <!--Story Preview View Controller-->
+        <scene sceneID="etd-cp-Kk8">
+            <objects>
+                <viewController storyboardIdentifier="StoryPreview" id="gSs-HM-5PE" customClass="StoryPreviewViewController" customModule="SnapClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2iR-3n-HNp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xeK-T4-iba">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-zX-h5c">
+                                <rect key="frame" x="315" y="20" width="50" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeAction:" destination="gSs-HM-5PE" eventType="touchUpInside" id="Ckh-KR-OrT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PIt-zX-h5c" firstAttribute="leading" secondItem="2iR-3n-HNp" secondAttribute="leading" constant="315" id="0Az-sb-Qoo"/>
+                            <constraint firstItem="xeK-T4-iba" firstAttribute="top" secondItem="2iR-3n-HNp" secondAttribute="top" id="Acj-kw-wd8"/>
+                            <constraint firstItem="PIt-zX-h5c" firstAttribute="top" secondItem="3pj-GF-pOK" secondAttribute="top" id="B1n-30-vN0"/>
+                            <constraint firstAttribute="trailing" secondItem="xeK-T4-iba" secondAttribute="trailing" id="GCp-Ub-bAt"/>
+                            <constraint firstAttribute="bottom" secondItem="xeK-T4-iba" secondAttribute="bottom" id="jgL-ow-H8y"/>
+                            <constraint firstItem="xeK-T4-iba" firstAttribute="leading" secondItem="2iR-3n-HNp" secondAttribute="leading" id="uTN-PX-BVB"/>
+                            <constraint firstItem="3pj-GF-pOK" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PIt-zX-h5c" secondAttribute="trailing" id="z0a-ev-SuW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3pj-GF-pOK"/>
+                    </view>
+                    <connections>
+                        <outlet property="storyPreview" destination="xeK-T4-iba" id="c8o-Ci-V0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXn-Md-UJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4084" y="949.47526236881572"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="5wS-sc-52b">
@@ -293,6 +337,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signupAction:" destination="Enk-c0-UzT" eventType="touchUpInside" id="Vru-hR-wFu"/>
+                                    <segue destination="iKg-72-DYO" kind="presentation" id="HOu-m3-42t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,7 +394,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpd-2l-FgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="134"/>
+            <point key="canvasLocation" x="-367" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vzv-le-p7G">
@@ -366,10 +411,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tu-dK-oCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2543" y="217"/>
+            <point key="canvasLocation" x="2729" y="-496"/>
         </scene>
     </scenes>
     <resources>
         <image name="snapchat-1360003_1920" width="1920" height="1152"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="HOu-m3-42t"/>
+    </inferredMetricsTieBreakers>
 </document>
