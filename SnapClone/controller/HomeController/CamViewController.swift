@@ -25,27 +25,16 @@ class CamViewController: UIViewController{
         styleButton()
         configureCameraController()
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        styleButton()
-//        configureCameraController()
-//        
-//    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     func configureCameraController() {
         cameraController.prepare {(error) in
             if let error = error {
                 print(error)
             }
-            
             try? self.cameraController.displayPreview(on: self.cam)
         }
     }
+    
     func styleButton(){
         captureButton.layer.cornerRadius = captureButton.frame.height/2
         captureButton.layer.borderColor = UIColor.red.cgColor

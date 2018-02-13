@@ -116,7 +116,10 @@ extension CameraController{
             }
         }
     }
-    
+}
+
+//Preview and Capture
+extension CameraController{
     func displayPreview(on view: UIView) throws {
         guard let captureSession = self.captureSession, captureSession.isRunning else { throw CameraControllerError.captureSessionIsMissing }
         
@@ -139,6 +142,7 @@ extension CameraController{
     }
 }
 
+//Implemention of Delegate
 extension CameraController: AVCapturePhotoCaptureDelegate {
     public func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?,
                         resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Swift.Error?) {
@@ -211,7 +215,7 @@ extension CameraController{
     }
 }
 
-
+//enumerated types
 extension CameraController{
     enum CameraControllerError: Swift.Error {
         case captureSessionAlreadyRunning

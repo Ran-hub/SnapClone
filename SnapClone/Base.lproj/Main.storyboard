@@ -151,7 +151,7 @@
         <!--Home View Controller-->
         <scene sceneID="zG5-5K-ow3">
             <objects>
-                <viewController storyboardIdentifier="Home" id="9cN-mt-XGS" customClass="HomeViewController" customModule="SnapClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9cN-mt-XGS" customClass="HomeViewController" customModule="SnapClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DIE-hQ-MuT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,7 +409,7 @@
         <!--Navigation Controller-->
         <scene sceneID="vzv-le-p7G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iKg-72-DYO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="iKg-72-DYO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DXA-ZN-DRV">
                         <autoresizingMask key="autoresizingMask"/>
